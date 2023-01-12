@@ -1,0 +1,13 @@
+{"type": "record",
+  "namespace": "com.avro.example",
+  "name": "Employee",
+  "fields": [
+    {"name": "name","type": "string"},
+    {"name": "email","type": "string"},
+    {"name": "salary",
+      "type": { "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 4,
+                "scale": 2
+      }}]
+}
